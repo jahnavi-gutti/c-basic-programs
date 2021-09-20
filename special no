@@ -1,0 +1,33 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    int num,n,fact,temp,sum=0,i;
+    scanf("%d",&num);
+    temp=num;
+    sum=0;
+    while(temp>0)
+    {
+        n=temp%10;
+        fact=1;
+        for (i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+        sum=sum+fact;
+        temp=temp/10;
+    }
+    if (sum==num)
+        printf("special no");
+    else
+        printf("not a special no");
+}
+
+/*
+145
+
+special no
+
+*/
